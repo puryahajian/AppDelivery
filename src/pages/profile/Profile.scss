@@ -1,0 +1,48 @@
+@import url(../../root.scss);
+
+.div-profile{
+    height: 100vh;
+    .Link-To-Page{
+        text-decoration: none;
+    }
+    .box-top-profile{
+        border: 1px solid black;
+        height: 140px;
+        background: var(--color-green);
+        clip-path: polygon(51% 25%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+        margin: -35px 0 0 0;
+    }
+    .img-profile-user{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: -60px auto 0;
+        display: flex;
+        position: relative;
+        background-color: var(--color-white);
+        border: 3px solid var(--color-green);
+    }
+    .btns{
+        width: 95%;
+        cursor: pointer;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        padding: 8px;
+        background: var(--color-green);
+        color: var(--color-orange);
+        border-radius: 8px;
+        p{
+            margin: 0;
+            font-family: sans;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .icon-btn{
+            font-size: 16px;
+        }
+    }
+    
+}

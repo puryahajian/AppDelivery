@@ -1,0 +1,141 @@
+@import url(../../root.scss);
+
+.login{
+    // border: 1px solid black;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 602px) {
+        height: 100vh;    
+    }
+    .div-top{
+        // border: 1px solid black;
+        height: 55%;
+        width: 600px;
+        position: fixed;
+        top: -300px;
+        clip-path: polygon(48% 0%,100% 0%,0% 40%,0% 0%);
+        background: var(--color-green);
+        animation: animateTop 0.5s forwards;
+        @media screen and (max-width: 602px) {
+            // height: 100vh; 
+            // top: -70px;
+            width: 100%;
+        }
+    }
+    .div-bottom{
+        // border: 1px solid black;
+        height: 25%;
+        width: 600px;
+        position: fixed;
+        bottom: -300px;
+        clip-path: polygon(100% 0%,100% 100%,0% 100%,48% 53%);
+        background: var(--color-green);
+        animation: animateBottom 0.5s forwards;
+        @media screen and (max-width: 602px) {
+            width: 100%;    
+        }
+    }
+    .form-get-number{
+        display: grid;
+        // border: 1px solid black;
+        h2{
+            margin: 0 0 40px;
+            text-align: center;
+            font-family: sans;
+            font-size: 32px;
+        }
+        label{
+            margin: 0 0 16px;
+            font-family: sans;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input{
+            height: 32px;
+            width: 300px;
+            border: 1px solid var(--color-grey);
+            border-radius: 8px;
+            padding: 0 8px;
+        }
+        .div-input{
+            width: 100%;
+        }
+        .falow{
+            margin: 24px 0 0;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    .icon-brands{
+                        font-size: 32px;
+                    }
+                    
+                }
+            }
+        }
+        .btn-sent-number{
+            font-family: sans;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 1px solid var(--color-orange);
+            background: var(--color-orange);
+            margin: 16px 0 0;
+            padding: 8px;
+        }
+    }
+
+    .form-get-code{
+        // border: 1px solid black;
+        padding: 16px;
+        .title-get-code{
+            text-align: center;
+            margin: 0 0 16px;
+            font-family: sans;
+            font-size: 16px;
+        }
+        :where(.css-dev-only-do-not-override-j9bb5n).ant-otp .ant-otp-input {
+            width: 54px;
+            height: 54px;
+            font-size: 16px;
+        }
+        :where(.css-dev-only-do-not-override-j9bb5n).ant-otp {
+            column-gap: 24px;
+        }
+        .btn-get-code{
+            width: 100%;
+            padding: 16px;
+            margin: 16px 0 0;
+            border: 1px solid transparent;
+            background: var(--color-orange);
+            border-radius: 8px;
+            font-family: sans;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
+
+@keyframes animateTop {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 0px;
+    }
+}
+@keyframes animateBottom {
+    from {
+        bottom: -320px;
+    }
+    to {
+        bottom: 0px;
+    }
+}

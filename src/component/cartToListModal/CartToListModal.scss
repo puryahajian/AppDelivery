@@ -1,0 +1,82 @@
+@import url(../../root.scss);
+
+.CTLM{
+    // border: 1px solid black;
+    position: fixed;
+    bottom: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0 -5px 15px 0px #dddddd;
+    width: 600px;
+    background: var(--color-white);
+    @media screen and (max-width: 602px) {
+        width: 100%;
+    }
+    .div-CTLM{
+        border-bottom: 1px solid var(--color-grey);
+        height: 60px;
+        margin: 16px;
+        overflow: auto;
+        grid-gap: 8px;
+        display: grid;
+    }
+    .div-CTLM::-webkit-scrollbar{
+        display: none;
+    }
+    .list-CTLM{
+        border: 1px solid var(--color-grey);
+        border-radius: 8px;
+        display: flex;
+        padding: 8px;
+        justify-content: space-between;
+        align-items: center;
+        .name-product{
+            p{
+                margin: 0;
+                font-family: sans;
+                font-size: 16px;   
+            }
+        }
+        .btns{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            grid-gap: 16px;
+            button{
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                cursor: pointer;
+                color: var(--color-white);
+            }
+            .plus{
+                background-color: var(--color-green);
+            }
+            .negative{
+                background: none;
+                border: 1px solid var(--color-green);
+                color: var(--color-green);
+            }
+        }
+    }
+    .btn-sub-modal{
+        width: 100%;
+        padding: 16px 0;
+        margin: 0;
+        font-family: sans;
+        font-size: 12px;
+        font-weight: bold;
+        background: var(--color-green);
+        color: var(--color-white);
+        border: 1px solid transparent;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        cursor: pointer;
+    }
+    
+}

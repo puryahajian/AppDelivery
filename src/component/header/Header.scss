@@ -1,0 +1,88 @@
+@import url(../../root.scss);
+
+.header{
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    h1{
+        margin: 0;
+        font-size: 24px;
+    }
+    .item-right{
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        grid-gap: 8px;
+        .btn-offcanvas{
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-green);
+            color: var(--color-white);
+            border-radius: 6px;
+        }
+        :where(.css-dev-only-do-not-override-j9bb5n).ant-badge .ant-badge-count {
+            left: 17px !important;
+            background-color: var(--color-orange) !important;
+        }
+    }
+    .item-left{
+        // border: 1px solid black;
+        display: flex;
+        align-items: center;
+        grid-gap: 8px;
+        .btn-offcanvas{
+            cursor: pointer;
+            border: none;
+            outline: none;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-green);
+            color: var(--color-white);
+            border-radius: 6px;
+        }
+        :where(.css-dev-only-do-not-override-j9bb5n).ant-badge .ant-badge-count {
+            left: 17px !important;
+            background-color: var(--color-orange) !important;
+        }
+        .btn-backTo-Home{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--color-green);
+            border-radius: 6px;
+            background: none;
+            color: var(--color-orange);
+        }
+    }
+
+    // css file headerPaths
+    .btn-Login{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-green);
+        color: var(--color-white);
+        border-radius: 6px;
+    }
+    // css file headerPaths
+
+}
