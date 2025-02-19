@@ -13,24 +13,18 @@ export const renderRightItem = (location) => {
   } else if (location.pathname === '/profile' ||
             location.pathname === '/edit-profile'
   ) {
-    return (
-      <Link to='/login'>
-        <a href="#">
-          <button className="btn-Login">
-            <FontAwesomeIcon icon={faSignIn} />
-          </button>
-        </a>
-      </Link>
-    )
+    // return (
+    //   <Link to='/login'>
+    //     <a href="#">
+    //       <button className="btn-Login">
+    //         <FontAwesomeIcon icon={faSignIn} />
+    //       </button>
+    //     </a>
+    //   </Link>
+    // )
   } else if (location.pathname === '/list-menu') {
     return (
-      <a href="#">
-        <Badge count={5}>
-          <button className="btn-offcanvas">
-            <FontAwesomeIcon icon={faShoppingBag} />
-          </button>
-        </Badge>
-      </a>
+      <p>logo</p>
     );
   }
   return null;
@@ -41,11 +35,11 @@ export const renderLeftItem = (location) => {
     return (
       <a href="#">
         <Link to='/cart'>
-          <Badge count={5}>
+          {/* <Badge count={5}> */}
             <button className="btn-offcanvas">
-              <FontAwesomeIcon icon={faShoppingBag} />
+              {/* <FontAwesomeIcon icon={faShoppingBag} /> */}
             </button>
-          </Badge>
+          {/* </Badge> */}
         </Link>
       </a>
     );

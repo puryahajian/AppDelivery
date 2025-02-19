@@ -37,49 +37,29 @@ function ListMenu() {
                         <div className="price">{formatedPrice}<img src={iconToman} alt="" /></div>
                     </div>
                     <div className="detail">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</div>
-                    {count === 0 ? (
-                        <button type="button" className='btn-zero' onClick={() => setCount(1)}>افزودن</button>
-                    ) : (
-                        <div className="btns">
-                            <button className='plus' type="button" onClick={handleIncrement}>+</button>
-                            <p>{count}</p>
-                            {count === 1 ? (
-                                <FontAwesomeIcon icon={faTrashCan} onClick={handleTrashClick} />
-                            ) : (
-                                <button className='negative' type="button" onClick={handleDecrement}>-</button>
-                            )}
-                        </div>
-                    )}
+                 
                 </div>
                 <div className="item">
                     <img className='img-item' src={imgitem} alt="" />
                     <div className="name-price">
                         <h3>اسم</h3>
-                        <div className="price">2000 <img src={iconToman} alt="" /></div>
+                        <div className="price">{formatedPrice}<img src={iconToman} alt="" /></div>
                     </div>
                     <div className="detail">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</div>
-                    <div className="btns">
-                        <button className='plus' type="submit">+</button>
-                        <p>2</p>
-                        <button className='negative' type="submit">-</button>
-                    </div>
+                 
                 </div>
                 <div className="item">
                     <img className='img-item' src={imgitem} alt="" />
                     <div className="name-price">
                         <h3>اسم</h3>
-                        <div className="price">2000 <img src={iconToman} alt="" /></div>
+                        <div className="price">{formatedPrice}<img src={iconToman} alt="" /></div>
                     </div>
                     <div className="detail">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</div>
-                    <div className="btns">
-                        <button className='plus' type="submit">+</button>
-                        <p>2</p>
-                        <button className='negative' type="submit">-</button>
-                    </div>
+                 
                 </div>
                 
             </div>
-            <CartToListModal/>
+            {/* <CartToListModal/> */}
         </div>
     </>
   );
