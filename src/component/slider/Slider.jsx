@@ -16,26 +16,26 @@ function Slider() {
     <>
       <div className='slider'>
         <img className='icon-health rotate' src={iconhealth} alt="" />
-        <Carousel autoplay>
+        <Carousel className='slide-main' autoplay>
             <div>
-                <h3 className='item-slider' style={contentStyle}>
+                <div className='item-slider' style={contentStyle}>
                     <img className='bg-slider' src={bgSlider}/>
-                </h3>
+                </div>
             </div>
             <div>
-                <h3 className='item-slider' style={contentStyle}>
+                <div className='item-slider' style={contentStyle}>
                     <img className='bg-slider' src={bgSlider}/>
-                </h3>
+                </div>
             </div>
             <div>
-                <h3 className='item-slider' style={contentStyle}>
+                <div className='item-slider' style={contentStyle}>
                     <img className='bg-slider' src={bgSlider}/>
-                </h3>
+                </div>
             </div>
             <div>
-                <h3 className='item-slider' style={contentStyle}>
+                <div className='item-slider' style={contentStyle}>
                     <img className='bg-slider' src={bgSlider}/>
-                </h3>
+                </div>
             </div>
         </Carousel>
         <img className='icon-health' src={iconhealth} alt="" />

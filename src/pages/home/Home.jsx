@@ -13,7 +13,7 @@ function Home() {
     
       <div className='origin-cover'>
         <Header/>
-        <Slider/>
+        {/* <Slider/> */}
         <div className="menu">
           <div className="item-menu">
             <div className="inset-circle">
